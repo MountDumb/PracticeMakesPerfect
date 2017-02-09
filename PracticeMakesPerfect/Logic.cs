@@ -43,19 +43,27 @@ namespace PracticeMakesPerfect
         // exercise d og e:
         public int CalcModulo(int firstInt, int secondInt)
         {
-            int counter = 0;
-            int itterations = 1;
+            //int counter = 0;
+            //int itterations = 1;
 
-            for (int i = 1; i <= firstInt; i++)
+            //for (int i = 1; i <= firstInt; i++)
+            //{
+            //    if (secondInt * itterations == i)
+            //    {
+            //        counter += secondInt;
+            //        itterations++;
+            //    }
+            //}
+
+            //return firstInt - counter;
+
+            while (firstInt >= secondInt)
             {
-                if (secondInt * itterations == i)
-                {
-                    counter += secondInt;
-                    itterations++;
-                }
+                firstInt -= secondInt;
             }
 
-            return firstInt - counter;
+            return firstInt;
+            
         }
 
         // exercise f:
