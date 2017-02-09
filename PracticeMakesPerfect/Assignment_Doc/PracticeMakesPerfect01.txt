@@ -1,0 +1,31 @@
+Programming – Practice makes perfect…
+Exercise 1
+In this exercise you should only use console applications!
+a) Create a method that takes two int parameters and returns the biggest value
+
+b) Create a method that takes three int parameters and returns the biggest value
+
+c) Create a method that takes two char parameters and returns the alphabetically largest value (e.g. ‘a’ > ‘b’)
+
+d) Create a method that takes two int parameters and return the remainder when you divide the first parameter by the second. You are NOT allowed to use the modulo operator (‘%’) OR any external classes (like Math).
+
+e) Create a method that takes two int parameters and return the remainder when you divide the first parameter by the second. You are NOT allowed to use the modulo operator (‘%’) OR any external classes (like Math). Furthermore, you are NOT allowed to do division of any kind!!
+
+f) Create a method that takes two parameters: a string and a char that returns how many times the char is found in the string. See if you can do it without using any methods from the String class.
+
+g) Create a simple game: The computer selects randomly an integer number from a known range (e.g. 1 – 100). The player enters a guess. If the guess equals the selected number, the player wins. If not, the player is told whether the guess was too high or too small and how many guesses are left (the player must guess the number in np more than 7 guesses).
+
+h) Create a method that takes a String as parameter. The string is supposed to only hold letters from the English alphabet. The method returns all the characters from the string that is not a letter (a-z, A-Z) in the same order as they are found in the string. Do not use any methods from the String class.
+
+i) Extend the solution from h) so the program holds a list of the characters considered invalid. Also output the position where the invalid characters were found. Output could look like: [‘+’, 12], [‘3’, 15], [‘@’, 18], [‘<’, 22] – i.e. a comma separated list of pairs of char-position within square brackets.
+
+j) Create a program that inputs int values from the user until the user enters a token (e.g. the number zero). Then the following is written to the screen: 
+o sum
+o average
+o difference between the largest and smallest number 
+o the number of values entered that was smaller than the average 
+
+k) Create a method that takes two int parameters. Now, without using any other variable than the two parameters the method should swap the values of the parameters!! So, if param1 holds 4 and param2 holds 7, the method should make param1 hold 7 and param2 hold 4 – without using any other variables than param1 and param2. This might seem impossible, but it isn’t at all – although you will need a good idea :)
+Exercise 2
+Create a WPF application with an input area (panel) and an output area (panel) – use labels, buttons and text areas at will.
+Implement as many of the exercises from above as possible using the WPF application. See if you can make the WPF as generic as possible (so you can use the exact same GUI for as many of the exercises from above).
