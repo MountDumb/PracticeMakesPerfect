@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Assignment_Doc\PracticeMakesPerfect01.docx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assignment_Doc\PracticeMakesPerfect01.txt" />
