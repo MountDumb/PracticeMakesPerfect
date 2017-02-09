@@ -21,7 +21,7 @@ namespace PracticeMakesPerfect
         }
 
         // exercise b:
-        public int compareThreeInbts(int a, int b, int c)
+        public int CompareThreeInts(int a, int b, int c)
         {
             return Math.Max(a, Math.Max(b, c));
         }
@@ -43,6 +43,8 @@ namespace PracticeMakesPerfect
         // exercise d og e:
         public int CalcModulo(int firstInt, int secondInt)
         {
+            //Only does postive numbers with "firstInt" higher than "secondInt"
+
             //int counter = 0;
             //int itterations = 1;
 

@@ -26,6 +26,7 @@ o difference between the largest and smallest number
 o the number of values entered that was smaller than the average 
 
 k) Create a method that takes two int parameters. Now, without using any other variable than the two parameters the method should swap the values of the parameters!! So, if param1 holds 4 and param2 holds 7, the method should make param1 hold 7 and param2 hold 4 – without using any other variables than param1 and param2. This might seem impossible, but it isn’t at all – although you will need a good idea :)
+
 Exercise 2
 Create a WPF application with an input area (panel) and an output area (panel) – use labels, buttons and text areas at will.
 Implement as many of the exercises from above as possible using the WPF application. See if you can make the WPF as generic as possible (so you can use the exact same GUI for as many of the exercises from above).
