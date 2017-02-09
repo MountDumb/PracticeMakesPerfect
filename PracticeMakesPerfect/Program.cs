@@ -40,7 +40,6 @@ namespace PracticeMakesPerfect
                         break;
                     case "2":
                         game.NewGame();
-                        Console.ReadKey();
                         break;
                     case "x":
                         running = false;

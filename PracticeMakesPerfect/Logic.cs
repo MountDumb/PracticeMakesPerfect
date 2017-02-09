@@ -95,7 +95,8 @@ namespace PracticeMakesPerfect
             string outputString = "";
             string disclaimer = "original string: " + '"' + subject + '"' + Environment.NewLine + "Position is zero indexed:" + Environment.NewLine;
             string stringOfTheDiscarded = "";
-           
+
+           //subject.Length is a Property, not a Method  Alternatively, use an int to count.
             for (int i = 0; i < subject.Length; i++)
             {
                 if (subject[i] >= 65 && subject[i] <= 90 || subject[i] >= 97 && subject[i] <= 122)
@@ -114,6 +115,31 @@ namespace PracticeMakesPerfect
         }
 
         // excercise j:
+
+        public void CalcStuff()
+        {
+            List<int> numbers = new List<int>();
+            bool running = true;
+            int choice = 0;
+             
+            while (running)
+            {
+                Console.Clear();
+                Console.WriteLine("Current amount of numbers: " + numbers.Count + Environment.NewLine);
+                Console.WriteLine("Please add an integer or choose '0' to stop");
+
+                choice = int.Parse(Console.ReadLine());
+
+                if (choice < 0 || choice > 0)
+                {
+                    numbers.Add(choice);
+                }
+                else
+                {
+                    running = false;
+                }
+            }
+        }
 
         // exercise k:
         public void Swapper(int a, int b)
