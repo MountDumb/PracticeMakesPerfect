@@ -20,6 +20,8 @@ namespace PracticeMakesPerfect
         {
             //game.NewGame();
             //logic.Swapper(-3, 4);
+            //logic.CheckStringForEnglishLetters("ab%cDEF{}Ghijk");
+            Console.ReadKey();
         }
     }
 }
