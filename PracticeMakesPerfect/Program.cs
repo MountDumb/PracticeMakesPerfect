@@ -24,8 +24,10 @@ namespace PracticeMakesPerfect
             while (running)
             {
                 Console.Clear();
-                Console.WriteLine("1: Logic" + Environment.NewLine + "2: Guessing Game" + Environment.NewLine + "x: Exit");
+                Console.WriteLine("1: Logic" + Environment.NewLine + "2: Guessing Game" + Environment.NewLine 
+                                             + "3: CalcStuff" + Environment.NewLine + "x: Exit");
                 choice = Console.ReadLine();
+
                 switch (choice.ToLower())
                 {
                     case "1":
@@ -41,6 +43,11 @@ namespace PracticeMakesPerfect
                     case "2":
                         game.NewGame();
                         break;
+                    case "3":
+                        logic.CalcStuff();
+                        Console.ReadKey();
+                        break;
+                        
                     case "x":
                         running = false;
                         break;

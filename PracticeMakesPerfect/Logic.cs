@@ -125,6 +125,8 @@ namespace PracticeMakesPerfect
             while (running)
             {
                 Console.Clear();
+
+                
                 Console.WriteLine("Current amount of numbers: " + numbers.Count + Environment.NewLine);
                 Console.WriteLine("Please add an integer or choose '0' to stop");
 
@@ -139,6 +141,9 @@ namespace PracticeMakesPerfect
                     running = false;
                 }
             }
+
+            Console.WriteLine(GetSum(numbers));
+            Console.WriteLine(GetAverage(numbers));
         }
 
         // exercise k:
@@ -150,12 +155,31 @@ namespace PracticeMakesPerfect
             a = a - b;
             Console.WriteLine("a is {0} and b is {1}", a, b);
            
-
-
-
         }
 
+        public int GetSum(List<int> numbers)
+        {
+            int output = 0;
 
+            foreach (var item in numbers)
+            {
+                output += item;
+            }
+
+            return output;
+        }
+
+        public double GetAverage(List<int> numbers)
+        {
+            double output = 0;
+
+            foreach (var item in numbers)
+            {
+                output += item;
+            }
+
+            return output / numbers.Count;
+        }
 
 
     }
