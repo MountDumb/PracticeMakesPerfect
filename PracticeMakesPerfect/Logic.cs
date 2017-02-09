@@ -69,7 +69,7 @@ namespace PracticeMakesPerfect
         }
 
         // exercise f:
-        public int CountOccurrencesofCharInString(string s, char c)
+        public int CountOccurrencesOfCharInString(string s, char c)
         {
             int counter = 0;
 
