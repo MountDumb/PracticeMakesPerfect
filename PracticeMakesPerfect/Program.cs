@@ -18,7 +18,7 @@ namespace PracticeMakesPerfect
 
         void Run()
         {
-            Console.WriteLine(logic.CalcModulo(21, 3));
+            //Console.WriteLine(logic.CalcModulo(21, 3));
             //game.NewGame();
             //logic.Swapper(-3, 4);
             //logic.CheckStringForEnglishLetters("ab%cDEF{}Ghijk'lMN!!");

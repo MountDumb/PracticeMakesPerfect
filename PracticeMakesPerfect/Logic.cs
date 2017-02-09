@@ -121,7 +121,7 @@ namespace PracticeMakesPerfect
             b = a - b;
             a = a - b;
             Console.WriteLine("a is {0} and b is {1}", a, b);
-            Console.ReadKey();
+           
 
 
 
