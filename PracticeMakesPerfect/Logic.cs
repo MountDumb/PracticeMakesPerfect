@@ -77,24 +77,33 @@ namespace PracticeMakesPerfect
         // exercise g:
         // Look at Class: "GuessingGame."
 
-        // exercise h.
+        // exercise h and i.
         public void CheckStringForEnglishLetters(string subject)
         {
             // English letters A through Z: 65-90
             // English letters a through z: 97-122
             string outputString = "";
-
-            foreach (var item in subject)
+            string disclaimer = "original string: " + '"' + subject + '"' + Environment.NewLine + "Position is zero indexed:" + Environment.NewLine;
+            string stringOfTheDiscarded = "";
+           
+            for (int i = 0; i < subject.Length; i++)
             {
-                if (item >= 65 && item <= 90 || item >= 97 && item <= 122 )
+                if (subject[i] >= 65 && subject[i] <= 90 || subject[i] >= 97 && subject[i] <= 122)
                 {
-                    outputString += item;
+                    outputString += subject[i];
+                }
+                else
+                {
+                    stringOfTheDiscarded += ("[" + "'" + subject[i] + "'" + ", " + "'" + i + "'" + "]" + Environment.NewLine);
                 }
             }
+    
             Console.WriteLine(outputString);
+            Console.WriteLine(disclaimer);
+            Console.WriteLine(stringOfTheDiscarded);
         }
 
-
+        // excercise j:
 
         // exercise k:
         public void Swapper(int a, int b)
