@@ -105,7 +105,10 @@ namespace PracticeMakesPerfect
                 }
                 else
                 {
-                    stringOfTheDiscarded += ("[" + "'" + subject[i] + "'" + ", " + "'" + i + "'" + "]" + Environment.NewLine);
+                    //string interpolation + look up Expression-Bodied Function Members
+                    //stringOfTheDiscarded += ("[" + "'" + subject[i] + "'" + ", " + "'" + i + "'" + "]" + Environment.NewLine);
+                    stringOfTheDiscarded += $"['{subject[i]}','{ i }']\n";
+
                 }
             }
     
@@ -125,8 +128,7 @@ namespace PracticeMakesPerfect
             while (running)
             {
                 Console.Clear();
-
-                
+                                
                 Console.WriteLine("Current amount of numbers: " + numbers.Count + Environment.NewLine);
                 Console.WriteLine("Please add an integer or choose '0' to stop");
 
@@ -142,8 +144,13 @@ namespace PracticeMakesPerfect
                 }
             }
 
-            Console.WriteLine(GetSum(numbers));
-            Console.WriteLine(GetAverage(numbers));
+            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine(numbers.Sum());
+            Console.WriteLine(numbers.Average());
+            Console.WriteLine(numbers.Max());
+            Console.WriteLine(numbers.Min());
+            PrintNumbersBelowAverage(numbers);
+            
         }
 
         // exercise k:
@@ -157,30 +164,25 @@ namespace PracticeMakesPerfect
            
         }
 
-        public int GetSum(List<int> numbers)
+        //Helper Methods
+        public void PrintNumbersBelowAverage(List<int> numbers)
         {
-            int output = 0;
+            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine("These numbers are lower than the average:");
+            Console.WriteLine(Environment.NewLine);
 
             foreach (var item in numbers)
             {
-                output += item;
+                if (item < numbers.Average())
+                {
+                    Console.WriteLine(item);
+                }
             }
-
-            return output;
         }
 
-        public double GetAverage(List<int> numbers)
-        {
-            double output = 0;
-
-            foreach (var item in numbers)
-            {
-                output += item;
-            }
-
-            return output / numbers.Count;
-        }
-
+    
+    
+   
 
     }
 }
